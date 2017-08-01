@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Midy Project 9</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<h2>Monk's Cafe</h2>
+	<h3>"The Coffee Shop"</h3>
+	
+
+
+	<img src="http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg" alt="Tom's Restaurant" id="img1">
+
+
+
+
+	
+	<h3>Reservations</h3>
+<table id="Master">
+<tbody>
+<tr><td>
+	<table id="01">
+		<thead>
+		<th colspan="2">Make a Reservation</th></thead>
+		<tbody>
+			<tr>
+				<td>Name</td><td><input id="name" type="text" placeholder="Full Name"></td></tr>
+			<tr>
+				<td>Day	</td><td><input id="date" type="text" placeholder="DD/MM/YY"></td></tr>
+			<tr>
+				<td colspan="2"><button type="submit">Confirm</button></td></tr>
+		</tbody>
+	</table>
+</td>
+<td><table id="02">
+<thead>
+<th colspan="2">Existing Reservation</th>
+
+</thead>
+<tbody>
+<tr>
+<td>Name</td> 
+<td>Day</td></tr>
+<tr>
+<td>Lynette Midy</td> 
+<td>12/18/2018</td></tr>
+<td>Lynette Midy</td> 
+<td>12/18/2018</td></tr>
+
+</tbody>
+</table>
+	
+</td></tr>
+
+</tbody>
+</table>
+
+
+
+
+
+
+<h3>Come Dine With Us</h3>
+<div id="map" style="width:400px;height:400px">map goes here</div>
+
+<h3>Customer Reviews</h3>
+	<form action="">
+		<input id="review" type="text" placeholder="review">
+		<input id="customername" type="text" placeholder="Custome Name">
+		<button type="submit">Add to list</button>
+	</form>
+	
+
+	<ul class="reviews">
+	  <!-- Step 1: Create a handlebars template for a list item with the following format:
+	   		<li>{{item}} - ${{cost}}</li> -->
+  			 <script id="reviewItem" type="text/x-handlebars-template">
+
+	   		<li>{{review}} </li><li></li> {{customername}}</li>
+	   		</script>
+
+	  
+	</ul>
+	
+
+<table id="03">
+<thead>
+	<th colspan="2">Customer Reviews</th>
+</thead>
+<tbody>
+	<tr>
+		<td rowspan="2"><img src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg" alt="jerry" id="img2"></td><td>"Big lettuce, big carrots, tomatoes like volleyballs"</td></tr>
+	<tr> 
+	<td colspan="2">- Jerry Seinfield, on The BIG Salad</td></tr>
+</tbody>
+</table>
+
+
+
+
+
+
+	 
+   
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/handlebars-v4.0.5.js"></script>
+	 <script src="js/main.js"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlSCUI8pB0ri2dhfisNyaha6h_Iu0cUbs&callback=initMap"> </script>
+</body>
+</html>
