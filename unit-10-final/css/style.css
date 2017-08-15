@@ -1,0 +1,16 @@
+
+
+.deleted {
+        color: red;
+        background: yellow;
+      }
+
+
+#map {    
+    width: 90px;
+    height: 90px;
+    margin: 15px; 
+  
+}
+
+
